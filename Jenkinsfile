@@ -33,7 +33,7 @@ pipeline {
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: 'frontenduser', // Replace with your SSH server config name
+                            configName: 'DeploymentFront', // Replace with your SSH server config name
                             transfers: [
                                 sshTransfer(
                                     sourceFiles: 'dist/**/*', // Where your build artifacts are
