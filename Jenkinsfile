@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DEPLOY_USER = 'gon' // User on frontVM
-        DEPLOY_HOST = '172.31.250.50' // IP of frontVM
+        DEPLOY_HOST = '172.31.253.98' // IP of frontVM
         DEPLOY_PATH = 'react-app' // Path on frontVM
     }
 
