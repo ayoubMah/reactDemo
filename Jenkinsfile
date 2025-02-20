@@ -4,7 +4,7 @@ pipeline {
     environment {
         DEPLOY_USER = 'gon' // User on frontVM
         DEPLOY_HOST = '172.31.253.98' // IP of frontVM
-        DEPLOY_PATH = 'react-app' // Path on frontVM
+        DEPLOY_PATH = '/var/www/react-app' // Path on frontVM
     }
 
     stages {
@@ -33,7 +33,7 @@ pipeline {
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: 'gon', // Replace with your SSH server config name
+                            configName: 'frontenduser', // Replace with your SSH server config name
                             transfers: [
                                 sshTransfer(
                                     sourceFiles: 'dist/**/*', // Where your build artifacts are
