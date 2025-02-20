@@ -33,7 +33,7 @@ pipeline {
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: '30632fef-835a-4e2b-8c30-bff71c9dd5c5', // Replace with your SSH server config name
+                            configName: 'gon', // Replace with your SSH server config name
                             transfers: [
                                 sshTransfer(
                                     sourceFiles: 'dist/**/*', // Where your build artifacts are
